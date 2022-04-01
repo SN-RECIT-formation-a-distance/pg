@@ -514,7 +514,7 @@ sub NAMED_ANS_RADIO {
 	my $extend = shift;
 	my %options = @_;
 
-        my $moodle_prefix = ($envir{use_opaque_prefix}) ? "%%IDPREFIX%%":'';
+	my $moodle_prefix = $envir{use_opaque_prefix} ? "%%IDPREFIX%%" : '';
 
 	my $checked = '';
 	if ($value =~/^\%/) {
@@ -552,7 +552,7 @@ sub NAMED_ANS_RADIO_EXTENSION {
 	my $tag = shift;
 	my %options = @_;
 
-        my $moodle_prefix = ($envir{use_opaque_prefix}) ? "%%IDPREFIX%%":'';
+	my $moodle_prefix = $envir{use_opaque_prefix} ? "%%IDPREFIX%%":'';
 
 	my $checked = '';
 	if ($value =~/^\%/) {
@@ -715,7 +715,7 @@ sub NAMED_ANS_CHECKBOX {
 	my $value = shift;
 	my $tag =shift;
 
-        my $moodle_prefix = ($envir{use_opaque_prefix}) ? "%%IDPREFIX%%":'';
+	my $moodle_prefix = $envir{use_opaque_prefix} ? "%%IDPREFIX%%" : '';
 
 	my $checked = '';
 	if ($value =~/^\%/) {
@@ -751,7 +751,7 @@ sub NAMED_ANS_CHECKBOX_OPTION {
 	my $tag =shift;
 	my %options = @_;
 
-        my $moodle_prefix = ($envir{use_opaque_prefix}) ? "%%IDPREFIX%%":'';
+	my $moodle_prefix = $envir{use_opaque_prefix} ? "%%IDPREFIX%%" : '';
 
 	my $checked = '';
 	if ($value =~/^\%/) {
